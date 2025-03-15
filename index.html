@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="AllenCoin - The official cryptocurrency by the LSE Mathematics Department" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AllenCoin | Official LSE Mathematics Department Cryptocurrency</title>
+  <!-- Optional: Link to an external CSS file or add a CSS framework like Bootstrap -->
+  <style>
+    /* ------------------------------ */
+    /*          GLOBAL STYLES         */
+    /* ------------------------------ */
+    :root {
+      --primary-red: #D41C1D; /* LSE Red */
+      --dark-gray: #2C2C2C;
+      --light-gray: #f4f4f4;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--white);
+      color: var(--dark-gray);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--primary-red);
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    /* ------------------------------ */
+    /*          HEADER / NAV          */
+    /* ------------------------------ */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: var(--white);
+      border-bottom: 1px solid #ddd;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--primary-red);
+    }
+
+    nav ul {
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav li {
+      font-weight: 500;
+    }
+
+    nav li a:hover {
+      color: var(--dark-gray);
+    }
+
+    /* ------------------------------ */
+    /*          HERO SECTION          */
+    /* ------------------------------ */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(
+        135deg,
+        rgba(212, 28, 29, 0.1) 0%,
+        rgba(212, 28, 29, 0.05) 100%
+      );
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--dark-gray);
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin-bottom: 2rem;
+      color: #555;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: var(--primary-red);
+      color: var(--white);
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #b91617;
+    }
+
+    /* ------------------------------ */
+    /*        FEATURES SECTION        */
+    /* ------------------------------ */
+    .features {
+      padding: 3rem 2rem;
+      background-color: var(--light-gray);
+      text-align: center;
+    }
+
+    .features h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .feature-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .feature-item {
+      background-color: var(--white);
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .feature-item h3 {
+      margin-bottom: 0.5rem;
+      color: var(--primary-red);
+    }
+
+    /* ------------------------------ */
+    /*       HOW IT WORKS SECTION     */
+    /* ------------------------------ */
+    .how-it-works {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .how-it-works h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .step {
+      border-left: 4px solid var(--primary-red);
+      padding-left: 1rem;
+      text-align: left;
+    }
+
+    .step h3 {
+      margin-bottom: 0.5rem;
+      color: var(--primary-red);
+    }
+
+    /* ------------------------------ */
+    /*         ROADMAP SECTION        */
+    /* ------------------------------ */
+    .roadmap {
+      padding: 3rem 2rem;
+      background-color: var(--light-gray);
+      text-align: center;
+    }
+
+    .roadmap h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .roadmap-timeline {
+      display: grid;
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .roadmap-phase {
+      background-color: var(--white);
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      text-align: left;
+    }
+
+    .roadmap-phase h3 {
+      margin-bottom: 0.5rem;
+      color: var(--primary-red);
+    }
+
+    /* ------------------------------ */
+    /*       TEAM / ADVISORS          */
+    /* ------------------------------ */
+    .team {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .team h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .team-members {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+    }
+
+    .member {
+      background-color: var(--light-gray);
+      border-radius: 8px;
+      padding: 1.5rem;
+    }
+
+    .member h3 {
+      margin-top: 1rem;
+      color: var(--primary-red);
+    }
+
+    /* ------------------------------ */
+    /*        FOOTER SECTION          */
+    /* ------------------------------ */
+    footer {
+      padding: 2rem;
+      background-color: var(--dark-gray);
+      color: var(--white);
+      text-align: center;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .footer-links a {
+      color: var(--white);
+      font-weight: 500;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- HEADER / NAV -->
+  <header>
+    <div class="logo">AllenCoin</div>
+    <nav>
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>Empowering the Future of Web3 at LSE</h1>
+    <p>AllenCoin is the official cryptocurrency by the LSE Mathematics Department, enabling secure transactions and decentralized innovation on campus and beyond.</p>
+    <a href="#features" class="cta-button">Get Started</a>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section id="features" class="features">
+    <h2>Why AllenCoin?</h2>
+    <div class="feature-list">
+      <div class="feature-item">
+        <h3>Mathematically Grounded</h3>
+        <p>Developed by the LSE Mathematics Department, ensuring robust security and efficiency.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Blockchain-Ready</h3>
+        <p>Built on next-generation blockchain technology for instant, scalable transactions.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Empowering Web3</h3>
+        <p>Integrates seamlessly with decentralized apps and smart contracts for cutting-edge research.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Community &amp; Collaboration</h3>
+        <p>Driven by LSE students, faculty, and alumni to foster innovation and real-world use cases.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS SECTION -->
+  <section id="how-it-works" class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <h3>1. Acquire AllenCoin</h3>
+        <p>Purchase or earn AllenCoin through departmental initiatives, grants, or research projects.</p>
+      </div>
+      <div class="step">
+        <h3>2. Store Securely</h3>
+        <p>Use our official LSE digital wallet or a compatible third-party wallet for safekeeping.</p>
+      </div>
+      <div class="step">
+        <h3>3. Transact &amp; Invest</h3>
+        <p>Pay for campus events, fund research, or transfer coins peer-to-peer with ease.</p>
+      </div>
+      <div class="step">
+        <h3>4. Participate in Governance</h3>
+        <p>Help shape AllenCoin’s future via token-based voting and community proposals.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROADMAP SECTION -->
+  <section id="roadmap" class="roadmap">
+    <h2>Roadmap</h2>
+    <div class="roadmap-timeline">
+      <div class="roadmap-phase">
+        <h3>Phase 1: Alpha Launch</h3>
+        <p>Introduce AllenCoin to LSE campus, gather initial feedback, and refine core protocols.</p>
+      </div>
+      <div class="roadmap-phase">
+        <h3>Phase 2: Pilot Transactions</h3>
+        <p>Partner with student clubs and faculty for real-world payment scenarios and user adoption.</p>
+      </div>
+      <div class="roadmap-phase">
+        <h3>Phase 3: Campus Integration</h3>
+        <p>Enable AllenCoin payments for campus stores, event ticketing, and alumni donations.</p>
+      </div>
+      <div class="roadmap-phase">
+        <h3>Phase 4: Global Partnerships</h3>
+        <p>Explore bridging AllenCoin to other universities and forming international collaborations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM SECTION -->
+  <section id="team" class="team">
+    <h2>Meet the Team</h2>
+    <div class="team-members">
+      <div class="member">
+        <!-- Replace with an actual profile picture if desired -->
+        <h3>Dr. Jane Smith</h3>
+        <p>Lead Researcher, Blockchain &amp; Mathematics</p>
+      </div>
+      <div class="member">
+        <h3>John Doe</h3>
+        <p>Developer &amp; Smart Contract Engineer</p>
+      </div>
+      <div class="member">
+        <h3>Emily Johnson</h3>
+        <p>Student Ambassador &amp; Community Manager</p>
+      </div>
+      <!-- Add more team members as needed -->
+    </div>
+  </section>
+
+  <!-- FOOTER / CONTACT -->
+  <footer id="contact">
+    <div class="footer-links">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#team">Team</a>
+      <a href="#contact">Contact</a>
+      <a href="#">Whitepaper</a>
+    </div>
+    <p>Contact us: <a href="mailto:info@allencoin.io">info@allencoin.io</a></p>
+    <p>&copy; 2025 AllenCoin, LSE Mathematics Department. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
