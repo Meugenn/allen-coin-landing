@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="750" style="background:white">
+<text x="350.0" y="30" font-size="20" fill="#333" text-anchor="middle" font-family="Arial,sans-serif">Five-Pointed Star: 5 Triangles (Base)</text>
+<line x1="350.0" y1="85.0" x2="203.05368692688168" y2="537.2542485937369" stroke="#555" stroke-width="2" fill="none"/>
+<line x1="112.23587092621162" y1="257.74575140626314" x2="496.94631307311823" y2="537.2542485937369" stroke="#555" stroke-width="2" fill="none"/>
+<line x1="203.05368692688168" y1="537.2542485937369" x2="587.7641290737884" y2="257.7457514062632" stroke="#555" stroke-width="2" fill="none"/>
+<line x1="496.94631307311823" y1="537.2542485937369" x2="350.0" y2="85.0" stroke="#555" stroke-width="2" fill="none"/>
+<line x1="587.7641290737884" y1="257.7457514062632" x2="112.23587092621162" y2="257.74575140626314" stroke="#555" stroke-width="2" fill="none"/>
+<polygon points="350.0,85.0 293.87150292755183,257.74575140626314 406.12849707244817,257.7457514062632" fill="rgba(255,80,80,0.35)" stroke="none"/>
+<polygon points="112.23587092621162,257.74575140626314 259.1821839993299,364.5084971874737 293.87150292755183,257.74575140626314" fill="rgba(80,180,80,0.35)" stroke="none"/>
+<polygon points="203.05368692688168,537.2542485937369 349.99999999999994,430.49150281252633 259.1821839993299,364.5084971874737" fill="rgba(80,80,255,0.35)" stroke="none"/>
+<polygon points="496.94631307311823,537.2542485937369 440.81781600067006,364.5084971874737 349.99999999999994,430.49150281252633" fill="rgba(255,200,50,0.35)" stroke="none"/>
+<polygon points="587.7641290737884,257.7457514062632 440.81781600067006,364.5084971874737 406.12849707244817,257.7457514062632" fill="rgba(200,80,255,0.35)" stroke="none"/>
+<polygon points="259.1821839993299,364.5084971874737 293.87150292755183,257.74575140626314 349.99999999999994,430.49150281252633 440.81781600067006,364.5084971874737 406.12849707244817,257.7457514062632" fill="rgba(200,200,200,0.3)" stroke="#999"/>
+<circle cx="350.0" cy="85.0" r="5" fill="#333" stroke="#333"/>
+<text x="350.0" y="115.0" font-size="13" fill="#333" text-anchor="middle" font-family="Arial,sans-serif">V0</text>
+<circle cx="112.23587092621162" cy="257.74575140626314" r="5" fill="#333" stroke="#333"/>
+<text x="88.45945801883278" y="270.4711762656368" font-size="13" fill="#333" text-anchor="middle" font-family="Arial,sans-serif">V1</text>
+<circle cx="203.05368692688168" cy="537.2542485937369" r="5" fill="#333" stroke="#333"/>
+<text x="188.35905561956986" y="522.0288237343632" font-size="13" fill="#333" text-anchor="middle" font-family="Arial,sans-serif">V2</text>
+<circle cx="496.94631307311823" cy="537.2542485937369" r="5" fill="#333" stroke="#333"/>
+<text x="511.64094438043" y="522.0288237343632" font-size="13" fill="#333" text-anchor="middle" font-family="Arial,sans-serif">V3</text>
+<circle cx="587.7641290737884" cy="257.7457514062632" r="5" fill="#333" stroke="#333"/>
+<text x="611.5405419811672" y="270.47117626563687" font-size="13" fill="#333" text-anchor="middle" font-family="Arial,sans-serif">V4</text>
+<circle cx="259.1821839993299" cy="364.5084971874737" r="4" fill="green" stroke="green"/>
+<circle cx="293.87150292755183" cy="257.74575140626314" r="4" fill="green" stroke="green"/>
+<circle cx="349.99999999999994" cy="430.49150281252633" r="4" fill="green" stroke="green"/>
+<circle cx="440.81781600067006" cy="364.5084971874737" r="4" fill="green" stroke="green"/>
+<circle cx="406.12849707244817" cy="257.7457514062632" r="4" fill="green" stroke="green"/>
+<text x="350.0" y="650" font-size="14" fill="#555" text-anchor="middle" font-family="Arial,sans-serif">Structure: 5 triangular tips + 1 central pentagon = 6 regions</text>
+<text x="350.0" y="672" font-size="13" fill="#777" text-anchor="middle" font-family="Arial,sans-serif">The 5 colored triangles are the only triangles in the base star</text>
+<text x="350.0" y="694" font-size="14" fill="red" text-anchor="middle" font-family="Arial,sans-serif">Goal: add 2 lines to double this to 10 triangles</text>
+</svg>

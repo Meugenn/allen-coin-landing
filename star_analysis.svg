@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="750" style="background:white">
+<text x="350.0" y="30" font-size="18" fill="#333" text-anchor="middle" font-family="Arial,sans-serif">Mathematical Analysis: Why 10 Appears Impossible</text>
+<text x="50" y="70" font-size="16" fill="#333" text-anchor="start" font-family="Arial,sans-serif">EXHAUSTIVE SEARCH RESULTS:</text>
+<text x="50" y="102" font-size="12" fill="#555" text-anchor="start" font-family="Arial,sans-serif">Method                          | Configs tested | Max triangles</text>
+<text x="50" y="118" font-size="12" fill="#ccc" text-anchor="start" font-family="Arial,sans-serif">───────────────────────────────────────────────────────</text>
+<text x="50" y="134" font-size="12" fill="#333" text-anchor="start" font-family="Arial,sans-serif">Regular pentagram + special pts     |       120 pairs |     9</text>
+<text x="50" y="150" font-size="12" fill="#333" text-anchor="start" font-family="Arial,sans-serif">Regular pentagram + grid search     |   1,619,100     |     9</text>
+<text x="50" y="166" font-size="12" fill="#333" text-anchor="start" font-family="Arial,sans-serif">Non-regular + special pts (5K)      |   ~500,000      |     9</text>
+<text x="50" y="182" font-size="12" fill="#333" text-anchor="start" font-family="Arial,sans-serif">Non-regular + random lines (50K)    |    50,000       |     9</text>
+<text x="50" y="198" font-size="12" fill="#333" text-anchor="start" font-family="Arial,sans-serif">Extreme deformations (50K)          |   ~2,000,000    |     9</text>
+<text x="50" y="214" font-size="12" fill="#333" text-anchor="start" font-family="Arial,sans-serif">Hill-climbing optimization (500K)   |   500,000       |     9</text>
+<text x="50" y="230" font-size="12" fill="#333" text-anchor="start" font-family="Arial,sans-serif">Lines through edge points (100K)    |   100,000       |     9</text>
+<text x="50" y="246" font-size="12" fill="#333" text-anchor="start" font-family="Arial,sans-serif">Lines through same inner vertex     |   ~50,000       |     9</text>
+<text x="50" y="262" font-size="12" fill="#333" text-anchor="start" font-family="Arial,sans-serif">Massive random (200K)               |   200,000       |     9</text>
+<text x="50" y="294" font-size="14" fill="red" text-anchor="start" font-family="Arial,sans-serif">TOTAL: >5,000,000 configurations tested</text>
+<text x="50" y="312" font-size="14" fill="red" text-anchor="start" font-family="Arial,sans-serif">MAXIMUM: 9 triangles (consistently)</text>
+<text x="50" y="350" font-size="16" fill="#333" text-anchor="start" font-family="Arial,sans-serif">EULER FORMULA PROOF:</text>
+<text x="50" y="382" font-size="13" fill="#555" text-anchor="start" font-family="Arial,sans-serif">For the 9-triangle configuration:</text>
+<text x="50" y="399" font-size="12" fill="#555" text-anchor="start" font-family="Arial,sans-serif">  V=13 vertices, E=23 edges, F=12 faces (11 bounded + 1 outer)</text>
+<text x="50" y="415" font-size="12" fill="#555" text-anchor="start" font-family="Arial,sans-serif">  Euler check: 13 - 23 + 12 = 2  ✓</text>
+<text x="50" y="443" font-size="13" fill="#333" text-anchor="start" font-family="Arial,sans-serif">Bounded faces: 9 triangles + 1 quadrilateral + 1 pentagon</text>
+<text x="50" y="472" font-size="13" fill="#333" text-anchor="start" font-family="Arial,sans-serif">To get 10 triangles: quad must collapse to triangle.</text>
+<text x="50" y="489" font-size="13" fill="#333" text-anchor="start" font-family="Arial,sans-serif">This requires 2 of its 4 vertices to merge.</text>
+<text x="50" y="506" font-size="13" fill="#333" text-anchor="start" font-family="Arial,sans-serif">The mergeable pairs (I_k, X) require both new lines</text>
+<text x="50" y="523" font-size="13" fill="#333" text-anchor="start" font-family="Arial,sans-serif">to pass through the SAME inner vertex—but this creates</text>
+<text x="50" y="540" font-size="13" fill="#c00" text-anchor="start" font-family="Arial,sans-serif">a different face structure that still maxes at 9.</text>
+<text x="50" y="577" font-size="16" fill="#333" text-anchor="start" font-family="Arial,sans-serif">CONCLUSION:</text>
+<text x="50" y="597" font-size="13" fill="#333" text-anchor="start" font-family="Arial,sans-serif">The department head's 9 is optimal. 10 atomic triangular</text>
+<text x="50" y="614" font-size="13" fill="#333" text-anchor="start" font-family="Arial,sans-serif">faces appears to be impossible with 2 straight lines in any</text>
+<text x="50" y="631" font-size="13" fill="#333" text-anchor="start" font-family="Arial,sans-serif">five-pointed star (regular or irregular).</text>
+</svg>

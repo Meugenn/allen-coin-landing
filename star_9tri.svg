@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="750" style="background:white">
+<text x="350.0" y="28" font-size="19" fill="#333" text-anchor="middle" font-family="Arial,sans-serif">Best Configuration: 9 Triangles (Maximum Found)</text>
+<text x="350.0" y="50" font-size="13" fill="#666" text-anchor="middle" font-family="Arial,sans-serif">Red line: V2→I4 axis | Blue line: V4→I0 axis</text>
+<line x1="350.0" y1="85.0" x2="203.05368692688168" y2="537.2542485937369" stroke="#555" stroke-width="2" fill="none"/>
+<line x1="112.23587092621162" y1="257.74575140626314" x2="496.94631307311823" y2="537.2542485937369" stroke="#555" stroke-width="2" fill="none"/>
+<line x1="203.05368692688168" y1="537.2542485937369" x2="587.7641290737884" y2="257.7457514062632" stroke="#555" stroke-width="2" fill="none"/>
+<line x1="496.94631307311823" y1="537.2542485937369" x2="350.0" y2="85.0" stroke="#555" stroke-width="2" fill="none"/>
+<line x1="587.7641290737884" y1="257.7457514062632" x2="112.23587092621162" y2="257.74575140626314" stroke="#555" stroke-width="2" fill="none"/>
+<line x1="203.05368692688168" y1="537.2542485937369" x2="406.12849707244817" y2="257.7457514062632" stroke="#cc0000" stroke-width="2.5" fill="none"/>
+<line x1="587.7641290737884" y1="257.7457514062632" x2="259.1821839993299" y2="364.5084971874737" stroke="#0000cc" stroke-width="2.5" fill="none"/>
+<circle cx="350.0" cy="85.0" r="5" fill="#333" stroke="#333"/>
+<text x="350.0" y="112.0" font-size="12" fill="#333" text-anchor="middle" font-family="Arial,sans-serif">V0</text>
+<circle cx="112.23587092621162" cy="257.74575140626314" r="5" fill="#333" stroke="#333"/>
+<text x="91.31262756771824" y="269.54412528251197" font-size="12" fill="#333" text-anchor="middle" font-family="Arial,sans-serif">V1</text>
+<circle cx="203.05368692688168" cy="537.2542485937369" r="5" fill="#333" stroke="#333"/>
+<text x="190.12241137644727" y="524.455874717488" font-size="12" fill="#333" text-anchor="middle" font-family="Arial,sans-serif">V2</text>
+<circle cx="496.94631307311823" cy="537.2542485937369" r="5" fill="#333" stroke="#333"/>
+<text x="509.87758862355264" y="524.455874717488" font-size="12" fill="#333" text-anchor="middle" font-family="Arial,sans-serif">V3</text>
+<circle cx="587.7641290737884" cy="257.7457514062632" r="5" fill="#333" stroke="#333"/>
+<text x="608.6873724322818" y="269.544125282512" font-size="12" fill="#333" text-anchor="middle" font-family="Arial,sans-serif">V4</text>
+<circle cx="259.1821839993299" cy="364.5084971874737" r="4" fill="green" stroke="green"/>
+<text x="271.1821839993299" y="356.5084971874737" font-size="10" fill="green" text-anchor="middle" font-family="Arial,sans-serif">I0</text>
+<circle cx="293.87150292755183" cy="257.74575140626314" r="4" fill="green" stroke="green"/>
+<text x="305.87150292755183" y="249.74575140626314" font-size="10" fill="green" text-anchor="middle" font-family="Arial,sans-serif">I1</text>
+<circle cx="349.99999999999994" cy="430.49150281252633" r="4" fill="green" stroke="green"/>
+<text x="361.99999999999994" y="422.49150281252633" font-size="10" fill="green" text-anchor="middle" font-family="Arial,sans-serif">I2</text>
+<circle cx="440.81781600067006" cy="364.5084971874737" r="4" fill="green" stroke="green"/>
+<text x="452.81781600067006" y="356.5084971874737" font-size="10" fill="green" text-anchor="middle" font-family="Arial,sans-serif">I3</text>
+<circle cx="406.12849707244817" cy="257.7457514062632" r="4" fill="green" stroke="green"/>
+<text x="418.12849707244817" y="249.7457514062632" font-size="10" fill="green" text-anchor="middle" font-family="Arial,sans-serif">I4</text>
+<circle cx="350.0" cy="335.0" r="5" fill="orange" stroke="orange"/>
+<text x="364.0" y="339.0" font-size="12" fill="orange" text-anchor="middle" font-family="Arial,sans-serif">X</text>
+<line x1="50" y1="580" x2="650" y2="580" stroke="#ddd" stroke-width="1" fill="none"/>
+<text x="350.0" y="600" font-size="14" fill="#333" text-anchor="middle" font-family="Arial,sans-serif">Result: 9 △ + 1 quadrilateral + 1 pentagon = 11 regions</text>
+<text x="350.0" y="622" font-size="12" fill="#666" text-anchor="middle" font-family="Arial,sans-serif">Quadrilateral vertices: I4, I1, I0, X (upper center)</text>
+<text x="350.0" y="640" font-size="12" fill="#666" text-anchor="middle" font-family="Arial,sans-serif">Pentagon vertices: I2, I3 + 2 new boundary points + X</text>
+<line x1="50" y1="655" x2="650" y2="655" stroke="#ddd" stroke-width="1" fill="none"/>
+<text x="350.0" y="675" font-size="15" fill="red" text-anchor="middle" font-family="Arial,sans-serif">WHY NOT 10:</text>
+<text x="350.0" y="695" font-size="13" fill="#c00" text-anchor="middle" font-family="Arial,sans-serif">The quadrilateral has 4 vertices. To make it a triangle,</text>
+<text x="350.0" y="713" font-size="13" fill="#c00" text-anchor="middle" font-family="Arial,sans-serif">two vertices must merge → requires 3 lines through 1 point.</text>
+<text x="350.0" y="733" font-size="13" fill="#c00" text-anchor="middle" font-family="Arial,sans-serif">No pentagram geometry (regular or irregular) achieves this.</text>
+</svg>
